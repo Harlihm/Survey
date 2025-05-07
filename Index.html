@@ -1,1 +1,50 @@
-a
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Awareness - KWASU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KWASU Carbon Footprint Awareness</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About the Campaign</h2>
+        <p>Welcome, KWASU students! This site helps you understand how your daily use of fuel-powered machines affects your carbon footprint — and what you can do to reduce it.</p>
+    </section>
+
+    <section id="calculator">
+        <h2>Carbon Footprint Calculator</h2>
+        <p>Enter your weekly activities:</p>
+        <label>Hours on generator use: <input type="number" id="generatorHours" value="0"></label><br>
+        <label>Km by motorcycle or car: <input type="number" id="transportKm" value="0"></label><br>
+        <button onclick="calculateFootprint()">Calculate My Emissions</button>
+        <p id="result"></p>
+    </section>
+
+    <section id="quiz">
+        <h2>Quick Awareness Quiz</h2>
+        <p>What contributes the most to student emissions?</p>
+        <button onclick="checkAnswer('a')">a) Mobile phone charging</button><br>
+        <button onclick="checkAnswer('b')">b) Generator and transport fuel use</button><br>
+        <button onclick="checkAnswer('c')">c) Drinking bottled water</button><br>
+        <p id="quizResult"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 KWASU Carbon Campaign. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
