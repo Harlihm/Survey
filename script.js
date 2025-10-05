@@ -10,7 +10,7 @@ function calculateFootprint() {
     document.getElementById('result').innerText = 
         `Your weekly carbon footprint is approximately ${totalEmission.toFixed(2)} kg CO₂.`;
 }
-
+// FUNCTION FOR QUIZ
 function checkAnswer(option) {
     let message;
     if (option === 'b') {
